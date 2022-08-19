@@ -1,0 +1,60 @@
+var map = {
+	"./arrow-down-blue.svg": 394,
+	"./arrow-down-grey.svg": 395,
+	"./arrow-right-white.png": 396,
+	"./arrow-right.svg": 397,
+	"./big_unicorn.png": 130,
+	"./blue-loader.svg": 133,
+	"./circle-grey.svg": 398,
+	"./circle.svg": 399,
+	"./coinbaseWalletIcon.svg": 400,
+	"./doge_token_round.png": 207,
+	"./doge_token_round_old.png": 401,
+	"./dropdown-blue.svg": 402,
+	"./dropdown.svg": 403,
+	"./dropup-blue.svg": 404,
+	"./fortmaticIcon.png": 405,
+	"./link.svg": 406,
+	"./magnifying-glass.svg": 407,
+	"./menu.svg": 408,
+	"./metamask.png": 206,
+	"./noise.png": 132,
+	"./plus-blue.svg": 409,
+	"./plus-grey.svg": 410,
+	"./portisIcon.png": 411,
+	"./poweredbydoge.jpg": 412,
+	"./question-mark.svg": 413,
+	"./question.svg": 414,
+	"./rabby.png": 415,
+	"./spinner.svg": 416,
+	"./token-list/lists-dark.png": 417,
+	"./token-list/lists-light.png": 418,
+	"./token-logo.png": 208,
+	"./trustWallet.png": 419,
+	"./walletConnectIcon.svg": 420,
+	"./x.svg": 421,
+	"./xl_uni.png": 131,
+	"./yieldyak-logo-black.png": 134,
+	"./yieldyak-logo-grey.png": 135,
+	"./yieldyak-logo-white.png": 209
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 179;
